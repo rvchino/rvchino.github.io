@@ -75,6 +75,7 @@ nav ul li:active{
 section ul{
     padding: 0;
     margin-top: 18px;
+    margin-bottom: 10px;
 }
 section ul li{
     list-style: none;
@@ -116,8 +117,12 @@ section p{
     line-height: 140%;
 }
 
+hr{
+    margin-top: 18px;
+}
+
 footer{
     margin: auto;
     text-align: center;
-    padding: 10px 0px 20px 0px;
+    padding: 11px 0px 12px 0px;
 }
