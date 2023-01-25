@@ -2,7 +2,7 @@ body{
     display: block;
     margin: auto;
     width: 90%;
-    background-color: #f6f7f6;
+    background-color: #F0E9D2;
     color: #494849;
     height: 100vh;
     font-family: 'Raleway', sans-serif;
@@ -40,7 +40,7 @@ a{
 }
 
 a:hover{
-    color: #607D8B;
+    color: #678983;
 }
 
 a:active{
@@ -82,10 +82,10 @@ section ul li{
     color: #1a1a1a;
 }
 .btn{
-    background-color: #607D8B;
+    background-color: #678983;
     border-style: solid;
     border-width: 2px;
-    border-color: black;
+    border-color: #181D31;
     list-style: none;
     display: block;
     width: 30%;
@@ -98,12 +98,13 @@ section ul li{
     height: 25px;
     padding: 18px 18px 10px 18px;
     box-shadow: 3.9px 7.8px 7.8px hsl(0deg 0% 0% / 0.38);
+    color: #E6DDC4;
 }
 .btn:hover{
-    background-color: #FFA000;
+    background-color: #181D31;
     transform: scale(1.03);
     box-shadow: 5.6px 11.2px 11.2px hsl(0deg 0% 0% / 0.33);
-    color: #494849;
+    color: #E6DDC4;
 }
 .btn:active{
     background-color: #F57C00;
