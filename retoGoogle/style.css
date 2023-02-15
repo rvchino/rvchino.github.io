@@ -147,6 +147,11 @@ span{
     overflow: auto;
 }
 
+.resultados{
+    list-style: none;
+    padding: 5px;
+}
+
 
 .on{
     display: block;
