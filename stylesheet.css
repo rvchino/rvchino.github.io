@@ -2,7 +2,7 @@ body{
     display: block;
     margin: auto;
     width: 90%;
-    background-color: #F0E9D2;
+    background-color: #f5f4f5;
     color: #494849;
     height: 100vh;
     font-family: 'Raleway', sans-serif;
@@ -82,7 +82,7 @@ section ul li{
     color: #1a1a1a;
 }
 .btn{
-    background-color: #678983;
+    background-color: #181D31;
     border-style: solid;
     border-width: 2px;
     border-color: #181D31;
