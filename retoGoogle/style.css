@@ -1,0 +1,265 @@
+
+
+body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+span{
+    color: #9aa0a6;
+}
+
+.whole{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+.botoneraNav{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 6px;
+    box-sizing: border-box;
+    height: 60px;
+    margin: 0;
+    align-items: center;
+}
+
+.b24px{
+    display: inline-block;
+    line-height: normal;
+    border-radius: 100%;
+    align-self:center;
+    height: 24px;
+    width: 24px;
+}
+
+.b24px:hover{
+    box-shadow: 0px 0px 8px rgb(32 33 36 /28%);
+    border-color: rgba(223, 225, 229, 0);
+}
+
+.fotoNav{
+    border-radius: 50px;
+    margin: 0 15px;
+}
+
+.btnNav{
+    padding: 10px 10px;
+    font: 13px Roboto, Arial, sans-serif;
+}
+
+.btnNav a{
+    color: rgba(0,0,0,.87);
+}
+
+.noList{
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 83vh;
+}
+
+.busqueda{
+    display: flex;
+    flex-flow: column wrap;
+    padding: 20px;
+    width: 35%;
+    min-width: 300px;
+    justify-content: center;
+    align-content: center;
+}
+
+.formBusqueda{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 50px;
+    padding: 5px 8px 0 14px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 44px;
+    align-items: center;
+}
+
+.barraBusqueda{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid #dfe1e5;
+    border-radius: 50px;
+    padding: 5px 8px 0 14px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 44px;
+    align-items: center;
+    
+}
+
+.barraBusqueda:hover{
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgb(32 33 36 /28%);
+    border-color: rgba(223, 225, 229, 0);
+}
+
+.barraBusqueda:focus{
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgb(32 33 36 /28%);
+    border-color: rgba(223, 225, 229, 0);
+}
+
+.barraBusquedaResultados{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 24px 24px 24px 24px;
+    box-shadow: 0 4px 6px rgb(32 33 36 / 28%);
+    border: 0;
+    padding-bottom: 4px
+}
+
+.AAA{
+    display: none;
+    position: absolute;
+    text-align: left;
+    z-index: 3;
+    cursor: default;
+    -webkit-user-select: none;
+    width: 33%;
+    margin-top: 80px;
+    min-height:fit-content;
+    max-height: 100px;
+    overflow: auto;
+}
+
+
+.on{
+    display: block;
+}
+
+
+.barraBuscLupita{
+    padding-right: 13px;
+}
+
+input{
+    border: none;
+    max-width: 450px;
+    width: 100%;
+    height: 28px;
+    outline: none;
+    font-size: 16px;
+    padding-bottom: 3px;
+    color:rgba(0,0,0,.87);
+}
+
+.barraBuscDerecha{
+    display: flex;
+    flex-direction: row;
+    padding-left: 13px;
+
+}
+
+.derecha{
+    padding: 0px 8px;
+}
+
+.botonesSplash{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.btn{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn:hover{
+    border: 1px solid rgba(119, 103, 103, 0.2);
+}
+
+
+.footerSplash{
+    display: flex;
+    flex-direction: column;
+}
+
+.rowDe{
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: #70757a;
+    background-color: #f2f2f2;;
+}
+
+.rowUpper{
+    padding: 15px 45px;
+}
+
+.rowLower{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rowLowerLeft{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.rowLowerRight{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.linkFooter{
+    padding: 0px 15px;
+}
+
+a:link{
+    text-decoration: none;
+    color: #70757a;
+}
+
+a:visited{
+    text-decoration: none;
+    color: #70757a;
+}
+
+a:hover{
+    text-decoration: underline;
+}
