@@ -1,0 +1,121 @@
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    height: 50px;
+}
+
+h1{
+    margin: 0;
+}
+.navWrapper{
+    display: flex;
+    justify-content: center;
+    border: 1px red solid;
+    width: 100%;
+    height: inherit;
+} 
+.navUl{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    border: 1px red solid;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.navLi{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:  5px 15px;
+}
+
+.navLi > *{
+    display: flex;
+
+}
+
+.pfPic{
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 33px;
+    height: 33px;
+}
+
+#estadoVacio{
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+    align-items: center;
+    height: calc(100vh - 50px);
+}
+
+.flex{
+    display: flex;
+}
+
+.colorInputs{
+    display: flex;
+}
+
+#estadoVacioBotonAdd{
+    position: fixed;
+    right: 17px;
+    bottom: 30px;
+    border-radius: 50px;
+    padding: 6px;
+    width: 66px;
+    height: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    z-index: 999;
+}
+
+.list-group-item{
+    margin: 4px 17px 4px 20px;
+    display: flex;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.list-group-item:first-child {
+    margin-top: 14px;
+    border-top-left-radius: 5px; 
+    border-top-right-radius: 5px;
+}
+
+.list-group-item+.list-group-item {
+    border-top-width: 1px;
+}
+
+.list-group-item:last-child {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.listDiv{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.imgList{
+    margin: 5px 10px;
+}
+
+.listDivText{
+    margin: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.listDiv input{
+    margin: 10px;
+}
