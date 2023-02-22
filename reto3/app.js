@@ -12,7 +12,7 @@ addBtn.addEventListener('click', function(){
     let descripcion = document.getElementById('aclaracionModal').value
     let modelo = `<li class="list-group-item" >
                     <div class="listDiv">
-                    <img src='icons/${categoria}.svg' width='32px' height='32px' class='imgList'>
+                    <img src='icons/${categoria}.png' width='32px' height='32px' class='imgList'>
                         <p class='listDivText'>${tarea}</p>
                         <input type="checkbox" onClick="sacarHijo(this)">
                     </div>

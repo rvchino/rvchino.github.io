@@ -8,21 +8,26 @@ nav{
     height: 50px;
 }
 
-h1{
+nav h1{
     margin: 0;
+    color:whitesmoke
+}
+
+span{
+    color: whitesmoke;
 }
 .navWrapper{
     display: flex;
     justify-content: center;
-    border: 1px red solid;
+    border-color: #1034A6;
     width: 100%;
     height: inherit;
+    background-color: #1034A6;
 } 
 .navUl{
     display: flex;
     justify-content: space-between;
     list-style: none;
-    border: 1px red solid;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -41,7 +46,7 @@ h1{
 
 .pfPic{
     border-radius: 50%;
-    border: 1px solid black;
+    border: 1px solid whitesmoke;
     width: 33px;
     height: 33px;
 }
@@ -49,7 +54,6 @@ h1{
 #estadoVacio{
     display: flex;
     justify-content: center;
-    border: 1px solid red;
     align-items: center;
     height: calc(100vh - 50px);
 }
@@ -75,19 +79,33 @@ h1{
     align-items: center;
     font-size: 28px;
     z-index: 999;
+    background-color: #1034A6;
+    border: rgba(225, 225, 225, 1);
+}
+
+#agregarBtnModal{
+    background-color: #1034A6;
+    border-color: #1034A6;
+}
+
+#cancelarBtnModla{
+    background-color: #89CFF0;
+    border-color: #89CFF0
 }
 
 .list-group-item{
     margin: 4px 17px 4px 20px;
     display: flex;
-    border-radius: 5px;
+    border-radius: 30px;
     padding: 5px;
+    background-color: rgba(225, 225, 225, 0.5);
+    border: rgba(225, 225, 225, 0.5);;
 }
 
 .list-group-item:first-child {
     margin-top: 14px;
-    border-top-left-radius: 5px; 
-    border-top-right-radius: 5px;
+    border-top-left-radius: 30px; 
+    border-top-right-radius:30px;
 }
 
 .list-group-item+.list-group-item {
@@ -95,8 +113,8 @@ h1{
 }
 
 .list-group-item:last-child {
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
 }
 
 .listDiv{
