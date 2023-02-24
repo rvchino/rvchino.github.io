@@ -2,6 +2,8 @@ body{
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
 }
 
 nav{
@@ -15,6 +17,11 @@ nav h1{
 
 span{
     color: whitesmoke;
+}
+
+ul{
+    list-style: none;
+    padding: 0px;
 }
 .navWrapper{
     display: flex;
@@ -58,6 +65,30 @@ span{
     height: calc(100vh - 50px);
 }
 
+#overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* transparent black color with 50% opacity */
+    display: none; /* hide the overlay by default */
+}
+
+#overlay.show {
+    display: block;
+    animation: fade-in 0.2s ease forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .flex{
     display: flex;
 }
@@ -93,23 +124,46 @@ span{
     border-color: #89CFF0
 }
 
+
+.list-group{
+    display: flex;
+    flex-direction: column;
+}
+
 .list-group-item{
     margin: 4px 17px 4px 20px;
     display: flex;
     border-radius: 30px;
     padding: 5px;
     background-color: rgba(225, 225, 225, 0.5);
-    border: rgba(225, 225, 225, 0.5);;
 }
 
-.list-group-item:first-child {
-    margin-top: 14px;
-    border-top-left-radius: 30px; 
-    border-top-right-radius:30px;
+.azulList{
+    border:2px solid #1034A6;
+    order: 2
 }
+
+.verdeList{
+    border:2px solid green;
+    order: 1;
+}
+
+.amarilloList{
+    border:2px solid yellow;
+    order: 0;
+}
+
+.rojoList{
+    border:2px solid red;
+    order: -1;
+}
+
+
+
+
 
 .list-group-item+.list-group-item {
-    border-top-width: 1px;
+    border-top-width: 2px;
 }
 
 .list-group-item:last-child {
@@ -121,6 +175,7 @@ span{
     display: flex;
     justify-content: space-between;
     width: 100%;
+
 }
 
 .imgList{
@@ -136,4 +191,197 @@ span{
 
 .listDiv input{
     margin: 10px;
+}
+
+.modalBody{
+    display: none;
+    justify-content: center;
+    z-index: 999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modalArea{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    background-color: whitesmoke;
+    border-radius: 10px;
+
+
+}
+
+.modalContent{
+    
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    border-radius: 10px;
+
+}
+
+.titleArea{
+    background-color:  #1034A6;
+    color: whitesmoke;
+    margin: 0px;
+    padding: 15px 16px;
+    font-size: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.titleContent{
+    margin: 0px 15px;
+    font-size: 20px;
+}
+
+#titulito{
+    padding-top: 10px;
+}
+input{
+    padding: 4px 6px 2px 6px;
+    margin: 10px 16px 0px 16px;
+    border: none;
+    border-bottom: 1px #1033a666 solid;
+    font-size: 15px;
+    background-color: transparent;
+    font-family: 'Raleway', sans-serif;
+}
+
+input:hover{
+    outline: none;
+    border-bottom: 1px #1034A6 solid;
+}
+
+
+input[type="radio"]:checked{
+    transform: scale(1.1);
+    border: 2px black solid;
+}
+
+
+select{
+    padding: 8px 36px 8px 1px;
+    margin: 10px 15px 0px 15px;
+    border: 1px #1033a666 solid;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: transparent;
+    font-family: 'Raleway', sans-serif;
+}
+
+select:hover{
+    outline-color: #1034A6;
+    outline-width: 1px;
+    margin: 10px 15px 0px 15px;
+}
+
+textarea{
+    padding: 6px 6px;
+    margin: 10px 16px 0px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px #1033a666 solid;
+    font-family: 'Raleway', sans-serif;
+}
+
+textarea:hover{
+    outline-color: #1034A6;
+}
+
+.nombreTarea{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.tipoTarea{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.aclaracionTarea{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+.prioridadTarea{
+    padding: 6px 12px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    justify-items: center;
+}
+
+.prioridadTarea h5{
+    text-align: center;
+}
+
+.prioridadTareaCheck{
+    display: flex;
+    justify-content: center;
+}
+
+.checksito{
+    appearance: none;
+    margin: 10px 8px 0px 8px;
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+}
+
+.modalButtons{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+    margin: 20px;
+}
+
+.azul{
+    background-color: #1034A6;
+}
+
+.verde{
+    background-color: green;
+}
+
+.amarillo{
+    background-color: yellow;
+}
+
+.rojo{
+    background-color: red;
+}
+
+.btn{
+    margin: 4px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+}
+
+.agregar{
+    background-color: #1034A6;
+    color: whitesmoke;
+}
+
+.cancelar{
+    background-color: #1033a621;
+}
+
+.activeFlex{
+    display: flex;
+}
+
+.activeBlock{
+    display: block;
+}
+
+.none{
+    display: none;
 }
