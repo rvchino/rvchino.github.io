@@ -158,9 +158,18 @@ ul{
     order: -1;
 }
 
+.deleteSpan{
+    color: black;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
 
-
-
+.checkBLur{
+    opacity: 40%;
+    filter: blur(1px);
+    transition: ease-in;
+}
 
 .list-group-item+.list-group-item {
     border-top-width: 2px;
