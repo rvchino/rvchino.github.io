@@ -15,9 +15,9 @@ let modal = document.getElementById('modalBody')
 var overlay = document.getElementById('overlay');
 let error = document.getElementById('error')
 
-let form = document.querySelector('form')
+let form = document.getElementById('formModal')
 
-//let span = document.querySelectorAll('.material-symbols-outlined .deleteSpan')
+
 
 botonAdd.addEventListener('click', function(){
     modal.classList.add('activeFlex')
@@ -28,16 +28,20 @@ botonAdd.addEventListener('click', function(){
 botonCanc.addEventListener('click', function(){
     modal.classList.remove('activeFlex')
     overlay.classList.remove('show')
+    error.classList.add('none')
 })
 
 
-addBtn.addEventListener('click', function(){
-    let tarea = txtModal.value
+addBtn.addEventListener('click', function(e){
+    e.preventDefault()
+    console.log(e)
+    let tarea = txtModal.value.trim()
+    if (tarea === '') {
+        error.classList.add('active')
+        error.classList.remove('none')
+        return;
+    }
     let categoria = document.getElementById('categoryModal').value
-    //let azul = document.getElementById('azul')
-    //let verde = document.getElementById('verde')
-    //let amarillo = document.getElementById('amarillo')
-    //let rojo = document.getElementById('rojo')
     let checksito = document.querySelector('input[name=checksito]:checked').value
     let modelo = `<li class="list-group-item  ${checksito}List" >
                     <div class="listDiv ">
@@ -49,17 +53,14 @@ addBtn.addEventListener('click', function(){
                         </span>
                     </div>
                 </li>`
-    vacio.style.display = 'none' 
+    vacio.classList.add( 'none' )
     ulLista.innerHTML += modelo
     txtModal.value = ""
     aclacracion.value = ""
     modal.classList.remove('activeFlex') 
     lista.classList.remove('none')
     overlay.classList.remove('show')
-    
-    if (ulLista.childElementCount === 0) {
-        vacio.style.display ='flex' 
-    }
+    error.classList.add('none')
 })
 
 
@@ -83,5 +84,10 @@ ulLista.addEventListener('click', function(event) {
             const div = event.target.parentElement;
             const li = div.parentElement;
             ulLista.removeChild(li);
+            console.log(ulLista.childElementCount)
+            if (ulLista.childElementCount === 0) {
+                vacio.classList.remove('none')
+            }
         }
     })
+    

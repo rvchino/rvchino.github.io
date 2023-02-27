@@ -46,42 +46,45 @@
                     <h2 class="titleArea">Decime</h2>
                     <div class="nombreTarea">
                         <h5 class="titleContent" id="titulito">¿Qué hacemos?</h5>
-                        <input type="text" id="txtModal" placeholder="Ver los videos del Summerhack" required/>
-                    </div>
-                    <div class="tipoTarea">
-                        <h5 class="titleContent">¿Dónde lo guardo?</h5>
-                        <select class="select" id="categoryModal" aria-placeholder="Categoría" required>
-                            <option disabled>Categoría</option>
-                            <option value="Personal">Personal</option>
-                            <option value="Trabajo">Trabajo</option>
-                            <option value="Ocio">Ocio</option>
-                        </select>
-                    </div>
-                    <div class="aclaracionTarea">
-                        <h5 class="titleContent">¿Alguna aclaración?</h5>
-                        <textarea id="aclaracionModal" rows="3" placeholder="Ponerse al día con los videos de Javascript..."></textarea>
-                    </div>
-                    <div class="prioridadTarea">
-                        <h5 class="titleContent">Prioridad</h5>
-                        <div class="prioridadTareaCheck">
-                            <input type="radio" class="checksito azul" name="checksito" id='azul' value="azul">
-                            <input type="radio" class="checksito verde" name="checksito" id='verde' value="verde">
-                            <input type="radio" class="checksito amarillo" name="checksito" id='amarillo' value="amarillo">
-                            <input type="radio" class="checksito rojo" name="checksito" id='rojo' value="rojo">
+                            <input type="text" id="txtModal" placeholder="Ver los videos del Summerhack" required/>
+                            <div id="error" class="errorMsg none">Por favor, completa el mensaje</div>
                         </div>
-                    </div>
-                    <div class="modalButtons">
-                        <button type="button" class="btn cancelar" id="cancelarBtnModla">Cancelar</button>
-                        <button type="button" class="btn agregar" id="agregarBtnModal">Agregar</button>
-                    </div>
+                        <div class="tipoTarea">
+                            <h5 class="titleContent">¿Dónde lo guardo?</h5>
+                            <select class="select" id="categoryModal" aria-placeholder="Categoría" required>
+                                <option disabled>Categoría</option>
+                                <option value="Personal">Personal</option>
+                                <option value="Trabajo">Trabajo</option>
+                                <option value="Ocio">Ocio</option>
+                            </select>
+                        </div>
+                        <div class="aclaracionTarea">
+                            <h5 class="titleContent">¿Alguna aclaración?</h5>
+                            <textarea id="aclaracionModal" rows="3" placeholder="Ponerse al día con los videos de Javascript..."></textarea>
+                        </div>
+                        <div class="prioridadTarea">
+                            <h5 class="titleContent">Prioridad</h5>
+                            <div class="prioridadTareaCheck">
+                                <input type="radio" class="checksito azul" name="checksito" id='azul' value="azul">
+                                <input type="radio" class="checksito verde" name="checksito" id='verde' value="verde">
+                                <input type="radio" class="checksito amarillo" name="checksito" id='amarillo' value="amarillo">
+                                <input type="radio" class="checksito rojo" name="checksito" id='rojo' value="rojo">
+                            </div>
+                        </div>
+                        <div class="modalButtons">
+                            <button type="button" class="btn cancelar" id="cancelarBtnModla">Cancelar</button>
+                            <button type="submit" class="btn agregar" id="agregarBtnModal">Agregar</button>
+                        </div>
+                        
                 </div>
             </div>
         </div>
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="estadoVacioBotonAdd">
             ✍🏻
         </button>
+    
     </section>
-    <section id="estadoVacio">
+    <section id="estadoVacio" class="estadoVacio">
         <h2 class="estadoVacioText">Día tranquilo ¿no?</h2>
     </section>
     <section id="estadoLista">
