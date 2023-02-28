@@ -29,6 +29,7 @@ botonCanc.addEventListener('click', function(){
     modal.classList.remove('activeFlex')
     overlay.classList.remove('show')
     error.classList.add('none')
+    lista.classList.remove('none')
 })
 
 
