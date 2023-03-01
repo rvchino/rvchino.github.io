@@ -32,6 +32,8 @@ botonCanc.addEventListener('click', function(){
     error.classList.add('none')
     lista.classList.remove('none')
     botonAdd.classList.remove('hidden')
+    txtModal.value = ""
+    aclacracion.value = ""
 })
 
 
