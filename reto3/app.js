@@ -67,6 +67,11 @@ addBtn.addEventListener('click', function(e){
     lista.classList.remove('none')
     overlay.classList.remove('show')
     error.classList.add('none')
+    if(checksito === null){
+        error.classList.add('activeBlock')
+        error.classList.remove('none')
+        return;
+    }
 
     listaStorage.push(modelo)
     // el metodo setItem me permite almacenar datos en el locasStorage, toma dos argumentos

@@ -57,7 +57,7 @@ ul{
 
 .pfPic{
     border-radius: 50%;
-    border: 1px solid whitesmoke;
+    border-color: #01a2f5 1px solid;
     width: 33px;
     height: 33px;
 }
