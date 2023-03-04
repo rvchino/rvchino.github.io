@@ -23,6 +23,10 @@ nav h1{
     color: #777;
 }
 
+.listDiv input{
+    width: 40px;
+}
+
 ul{
     list-style: none;
     padding: 0px;
@@ -244,6 +248,7 @@ ul{
     width: 100%;
     background-color: whitesmoke;
     border-radius: 10px;
+    max-width: 328px;
 }
 
 .modalContent{
@@ -281,6 +286,8 @@ input{
     font-size: 15px;
     background-color: transparent;
     font-family: 'Raleway', sans-serif;
+    width: 85.5%;
+    max-width: 286px;
 }
 
 input:hover{
@@ -310,6 +317,7 @@ select{
     border-radius: 5px;
     background-color: transparent;
     font-family: 'Raleway', sans-serif;
+    max-width: 298px;
 }
 
 select:hover{
@@ -320,12 +328,13 @@ select:hover{
 
 textarea{
     padding: 6px 6px;
-    margin: 10px 16px 0px 16px;
+    margin: 10px 15px 0px 15px;
     border: none;
     border-radius: 5px;
     background-color: transparent;
     border: 1px #1033a666 solid;
     font-family: 'Raleway', sans-serif;
+    max-width: 284px;
 }
 
 textarea:hover{

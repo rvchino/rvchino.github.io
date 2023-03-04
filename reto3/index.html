@@ -46,7 +46,8 @@
                     <h2 class="titleArea">Decime</h2>
                     <div class="nombreTarea">
                         <h5 class="titleContent" id="titulito">¿Qué hacemos?</h5>
-                            <input type="text" id="txtModal" placeholder="Aprender sobre localStorage" required/>
+                        <form class="agregarTarea">
+                            <input type="text" id="txtModal" placeholder="Aprender sobre localStorage"/>
                             <div id="error" class="errorMsg none">Por favor, completa el campo</div>
                         </div>
                         <div class="tipoTarea">
@@ -73,9 +74,9 @@
                         </div>
                         <div class="modalButtons">
                             <button type="button" class="btn cancelar" id="cancelarBtnModla">Cancelar</button>
-                            <button type="submit" class="btn agregar" id="agregarBtnModal">Agregar</button>
+                            <input type="submit" class="btn agregar" id="agregarBtnModal" value="Agregar"></input>
                         </div>
-                        
+                    </form>
                 </div>
             </div>
         </div>
