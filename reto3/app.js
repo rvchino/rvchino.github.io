@@ -57,7 +57,6 @@ function agregarTarea(e){
 // array y otro argumento.
 // La funcion va a tomar dos parametros -> Un array vacio y un lugar donde imprimir el codigo
 function agrandar(tareas = [], listaTarea){
-    
     listaTarea.innerHTML = tareas.map((tarea, i)=>{
         return `<li class="list-group-item  ${tarea.prioridad}List" >
         <div class="listDiv ">
@@ -99,7 +98,8 @@ ulLista.addEventListener('click', function(event) {
                 localStorage.clear()
                 return
             }
-            
+            localStorage.setItem('listaTareas', JSON.stringify(listaStorage)) // guardamos los nuevos valores a localStorage
+            agrandar(listaStorage, ulLista)
         }
     })
 

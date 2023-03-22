@@ -1,0 +1,249 @@
+body{
+    margin: 0;
+}
+
+h2{
+    margin: 0;
+    color: aliceblue
+}
+
+.none{
+    display: none;
+}
+
+.activeFlex{
+    display: flex;
+}
+
+.activeBlock{
+    display: block;
+}
+
+.app{
+    background-image: url(https://vuelvegranhermanoargentina.com/wp-content/uploads/gran_hermano-2022-web.jpg) ;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navTitle{
+padding: 5px 20px;
+}
+
+#pantalla0{
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 44px);
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.content0{
+    padding: 20px;
+}
+
+#pantalla1{
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 44px);
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+#pantalla2{
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 44px);
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 44px);
+    flex-direction: column;
+}
+
+
+.formulario{
+    display: flex;
+    border: 1px black solid;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.cartasResultados{
+    padding: 5px 12px 15px 12px;
+}
+
+.tituloResultado{
+    padding: 10px 0 0 0;
+    margin: 0;
+    text-align: center;
+    color: aliceblue
+}
+
+.imagenCarta{
+    width: 200px;
+    align-items: center;
+    margin: 0 auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.imgCartaResultados{
+    width: 70px;
+    border-radius: 100%;
+}
+
+#match{
+    text-align: center;
+    margin-top: 23px;
+}
+.matchTitulo{
+    text-align: center;
+    padding:  5px 35px;
+}
+
+.liJuegos{
+    color: aliceblue;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: aliceblue
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 20px 30px;
+    align-items: center;
+    width: 95%;
+    align-self: center;
+    border-radius: 10px;
+    background-color: black;
+    color: aliceblue;
+}
+
+.loading{
+    background-color: black;
+    width: 75px;
+    height: 75px;
+}
+
+.btn{
+    border: 1px solid aliceblue;
+    margin: 5px;
+    color: aliceblue;
+}
+
+#siguiente1{
+    margin-top: 20px;
+    border: 1px solid aliceblue;
+}
+
+#siguiente2{
+    margin-top: 20px;
+    border: 1px solid aliceblue;
+}
+
+#jugar{
+    margin-top: 20px;
+    border: 1px solid aliceblue;;
+}
+
+#listaJuegosAnteriores{
+    list-style: none;
+    padding: 0;
+}
+
+#tirarAgain{
+    margin-bottom: 20px;
+}
+
+.tituloAnteriores{
+    color: aliceblue;
+}
+
+.carrousel{
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.carousel-inner{
+    display: flex;
+    border: 1px solid black;
+    padding: 0px 20px;
+    align-items: center;
+    width: 95%;
+    align-self: center;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.tituloCardPlayer{
+    text-align: center;
+    padding: 10px 0px;
+    color: aliceblue;
+}
+
+.nombreCarta{
+    text-align: center;
+    padding: 15px 0px 0px 0px;
+    color: aliceblue;
+}
+
+.descripcionCarta{
+    text-align: center;
+    padding: 0px 35px;
+    color: aliceblue;
+}
+
+.contentRes{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: black;
+}
+
+#volver{}
+
+.footerContent{
+    display: flex;
+    padding:  5px 10px;
+    justify-content: center;
+}
+
+footer p{
+    margin: 0;
+}
