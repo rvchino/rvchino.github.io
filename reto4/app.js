@@ -26,13 +26,13 @@ let resultadosContent = document.getElementById('resultadosContent')
 
 let match = document.getElementById('match')
 
-let cartas = [{"id":0, "description": "Solo te importan los seguidores, el gym, la noche y hacer quilombo, bro. Claramente tenes biogte y usas camisas floreadas. Armaste el grupito más nefasto de la casa, te haciste el picante pero te eliminaron de un saque.", "name": "Tomás Holder", "img":"./img/tomas.jpeg","puntuacion":-20},
-{"id":1, "description": "Dijiste algo en la presentación para hacerte la polémica, formaste parte de los monitos, hiciste una jugada que te salió MUY mal y bueno, saliste segunda de la casa. La próxima será", "name": "Martina Stewart Usher", "img":"./img/martina.jpeg", "puntuacion": 1}, 
-{"id":2, "description": "Una de las primeras lleva-y-trae de la casa, no todos se bancan tu tono de voz pero jugaste bien, lástima que saliste tercera", "name":"Mora Jabornisky", "img":"./img/moragh.jpeg", "puntuacion":-2},
-{"id":3, "description": "Juan, el tachero, la primera víctima de Alfa, fuiste parte de los monitos, te acordaste tarde de jugar y se la picanteaste a Marcos que te la mandó a guardar. Te fuiste con uno de los porcentajes más altos de votos de la casa.", "name":"Juan Reverdito", "img":"./img/juangh.jpeg", "puntuacion":-5},
-{"id":4, "description": "El verdadero ni pincha ni corta. Literalmente nadie se acuerda de tu paso por la casa pero aún así te fuiste séptima, bastante bien.", "name":"María Laura Álvarez", "img":"./img/maria.jpeg", "puntuacion":0},
-{"id":5, "description": "¿Todo bien gordi? La más lleva y trae de la casa, discutiste heavy con la Tora. Te fuiste, volviste y te expulsaron por hablar de más. Un desastre", "name":"Juliana Díaz","img":"./img/juliana.jpeg", "puntuacion":3},
-{"id":6, "description": "Coti, la correntina cuchillera. La mejor jugadora de la casa, fan del queso rachado y novia del Cone. Te sacaron antes de tiempo pero te merecías ganar.", "name":"Constanza Romero", "img":"./img/coti.jpeg", "puntuacion": 20},
+let cartas = [{"id":0, "description": "Solo le importan los seguidores, el gym, la noche y hacer quilombo. Ves que entró a hacer quilombo dentro de la casa  y por eso no lo queres muy cerca tuyo.", "name": "Tomás Holder", "img":"./img/tomas.jpeg","puntuacion":-20},
+{"id":1, "description": "Ves que se junta mucho con el grupo de Juan, Tomás y Nacho. Cuando le hablas medio que te ningunea y por eso le hiciste la cruz", "name": "Martina Stewart Usher", "img":"./img/martina.jpeg", "puntuacion": 1}, 
+{"id":2, "description": "Tiene un tono de voz que mucho no te bancas, pero es copada y te cae bien.", "name":"Mora Jabornisky", "img":"./img/moragh.jpeg", "puntuacion":-2},
+{"id":3, "description": "Lo ves siempre pensando y mucho en su grupito. Tiene discusiones fuertes con Alfa y no te cae bien su onda, está siempre malhumorado. Lo queres lejos", "name":"Juan Reverdito", "img":"./img/juangh.jpeg", "puntuacion":-5},
+{"id":4, "description": "Siempre está con su mate, sin joder a nadie. La ves tranquila y mucho no te preocupa porque no hace casi nada", "name":"María Laura Álvarez", "img":"./img/maria.jpeg", "puntuacion":0},
+{"id":5, "description": "La ves siempre con Maxi, parece que no juega y no le sacaste la ficha todavía, pero tenes un presentimiento de que es una lleva y trae.", "name":"Juliana Díaz","img":"./img/juliana.jpeg", "puntuacion":3},
+{"id":6, "description": "Tiene un caracter fuerte y te dice de todo,por eso preferis no tenerla en contra. Anda muy cerca del Cone siempre, algo pasa ahí.", "name":"Constanza Romero", "img":"./img/coti.jpeg", "puntuacion": 20},
 {"id":7, "description": "Alexis a.k.a 'El Cone', novio de Coti, el cordobés más copado. Gran inventor del apodo 'Cabeza de cebolla' para Alfa, jugaste muy bien con Coti pero cuando estuviste solo te traicionó Thiago. Mal ahí", "name":"Alexis Quiroga","img":"./img/cone.jpeg", "puntuacion": 12},
 {"id":8, "description": "Te bancaste como tres meses sin que te voten, te ganaste a la gente por tu historia de vida. Te pusiste de novio con Daniela pero no la trataste bien y bueno, lo pagaste cuando volvió. Buen pibe igual.", "name":"Thiago Medina","img":"./img/thiago.jpeg", "puntuacion": 7},
 {"id":9, "description": "Maxi, el otro cordobés. Novio de Juliana, te olvidaste de jugar cuando te pusiste de novio y bueno, se vió. Eso sí, te ganaste un auto.", "name":"Maximiliano Giudici","img":"./img/maxi.jpeg", "puntuacion":10},
@@ -48,6 +48,8 @@ let cartas = [{"id":0, "description": "Solo te importan los seguidores, el gym, 
 {"id":19, "description": "Nachito, seguramente el ganador de este Gran Hermano, al principio fue parte de los monitos pero se reinventó y llegó lejos. Uno de los mejores sin duda.", "name":"Juan Ignacio Castañares Puente","img":"./img/nachogh.jpeg", "puntuacion": 50}]
 
 let cartasParaDisplay = []
+let jugadores = {}
+let dataPartida = []
 
 function sacarCartas(){
 while (cartasParaDisplay.length < 6){
@@ -133,13 +135,13 @@ function mostrarResultados(){
 
 
 function hayMatch(){
-    let bien = 'Hay muy buena onda entre todos y se ve que se quieren, la convivencia se hace fácil y los problemas son cada vez menos. Hay match entre los grupos'
-    let mal = 'Desde el primer día se hicieron la vida imposible, muchos chismes inventados, muchas discusiones y puteadas. La convivencia es dura y ya hay algunos que se quieren ir. No hay match entre los grupos'
+    let gana1 = `La estrategia de separarse y buscar por todos los cuartos de <strong>${jugadores.jugador1}</strong> tuvo efecto y encontraron las llaves en 2 minutos. Felicitaciones al equipo, esta semana tienen inmunidad.`
+    let gana2 = `<strong>${jugadores.jugador1}</strong> quiso hacer trampa escondiendo algunas llaves del equipo de <strong>${jugadores.jugador2}</strong>. Gran hermano lo vio y lo sancionó a él y a todo su equipo. Todos se fueron a placa. Felicitaciones al equipo de <strong>${jugadores.jugador2}</strong>, ganaron esta semana.`
     let cuenta = cartasParaDisplay[0].puntuacion + cartasParaDisplay[1].puntuacion + cartasParaDisplay[2].puntuacion + cartasParaDisplay[3].puntuacion + cartasParaDisplay[4].puntuacion + cartasParaDisplay[5].puntuacion
     if(cuenta > 50){
-        match.innerHTML += `<h6 class='matchTitulo'>${bien}</h6>`
+        match.innerHTML += `<h6 class='matchTitulo'>${gana1}</h6>`
     }else{
-        match.innerHTML += `<h6 class='matchTitulo'>${mal}</h6>`
+        match.innerHTML += `<h6 class='matchTitulo'>${gana2}</h6>`
     }
     localStorage.setItem('resultadoPartida', cuenta)
 }
@@ -149,7 +151,7 @@ let desdeStorage = localStorage.getItem('resultadoPartida')
 if (desdeStorage > 90){
     listaJA.innerHTML +=`<li class='liJuegos'><div>
                             </div>
-                            <p>Los grupos se van a llevaron bien</p>
+                            <p>Ganó el equipo de </p>
                             <div>
                             </div>
                         </li>`
@@ -189,6 +191,7 @@ btnJugar.addEventListener('click',function(){
     dataDeCartas2()
     mostrarResultados()
     console.log(cartasParaDisplay)
+    console.log(jugadores)
     localStorage.setItem('listaPartidas', JSON.stringify(cartasParaDisplay))
     
 })
@@ -231,7 +234,11 @@ btnGuardarPartida.addEventListener('click', ()=>{
     let tarjetaTitulo = document.querySelector('.matchTitulo')
     match.removeChild(tarjetaTitulo)
     listaResultados()
+    dataPartida.push(jugadores)
+    dataPartida.push(cartasParaDisplay)
+    console.log(dataPartida)
     cartasParaDisplay = []
+    
 })
 
 btnSalir.addEventListener('click', ()=>{

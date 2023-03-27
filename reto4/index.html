@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
     <title>Cartitapp</title>
 </head>
 <body>
@@ -54,7 +56,9 @@
         <div class="content">
             <div class="intro">
                 <span>
-                    Durante los primeros días notan que se van formando grupitos y que empiezan a haber problemas. Por las dudas, ustedes arman los suyos.
+                    Pasaron los días y llegó la primera pruba del líder. Se dividen en grupos y leen el reto:<br>
+                    <i>"Deben encontrar 5 llaves escondidas en toda la casa y abrir la caja fuerte que está en el SUM."</i><br>
+                    Empecemos.
                 </span>
             </div>
             <button id="jugar" class="btn">Jugar</button>
@@ -62,8 +66,7 @@
     </section>
     <section id="loading" class="none">
         <div class="wrapper">
-            <div class="loading">
-            </div>
+            <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_DqOX9udpGo.json"  background="transparent"  speed="1"  style="width: 200px; height: 200px;"  loop autoplay></lottie-player>
             <p>Cargando...</p>
         </div>
     </section>
@@ -95,7 +98,7 @@
             <div class="content">
             <div class="contentRes" id="resultadosContent">
             </div>
-            <h5 id="match">¿Cómo se llevaron los grupos?</h5>
+            <h5 id="match">¿Quién ganó la prueba?</h5>
             <button id="guardarPartida" class="btn">Guardar</button>
             <button id="btnSalir" class="btn">Salir</button>
         </div>
